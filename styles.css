@@ -1,0 +1,28 @@
+.section-header {
+  background: #0b6b6b;
+  padding: 24px 22px;
+  border-radius: 12px;
+  margin: 30px auto;
+  color: #fff; /* Makes text readable on a dark background */
+  max-width: 750px;
+  box-shadow: 0 2px 16px rgba(11,107,107,0.12);
+  text-align: center;
+}
+.section-box {
+  background: #0b6b6b;
+  padding: 28px 22px;
+  border-radius: 12px;
+  margin: 30px auto;
+  color: #fff; /* Makes text readable on a dark background */
+  max-width: 750px;
+  box-shadow: 0 2px 16px rgba(11,107,107,0.12);
+}
+.section-box h1 {
+  color: #fff;
+}
+.section-box h2 {
+  color: #fff;
+}
+.section-box p, .section-box ul, .section-box label {
+  color: #f8f8f8;
+}
