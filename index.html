@@ -3,212 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Total Insurance USA - Life Insurance Plans & Quotes</title>
+  <title>Total Insurance USA - Request Quote</title>
+  <meta name="description" content="Compare affordable life insurance options and request a personalized quote from Total Insurance USA.">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #0b6b6b;
-      color: #fff;
-      padding: 20px 10px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    nav {
-      background: #084c48;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    .container {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #083b3a;
-    }
-    ul {
-      list-style: disc;
-      padding-left: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #eee;
-      margin-top: 30px;
-    }
-    .price {
-      font-weight: bold;
-      color: #333;
-      margin-top: 10px;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="top-strip wrap">
+      <div class="brand-block">
+        <p class="brand-name">Total Insurance USA</p>
+        <p class="brand-tag">The right plan at the right time</p>
+      </div>
+      <div class="top-right">
+        <p class="top-links">
+          <a href="#get-quote">Request Information</a>
+          <span>|</span>
+          <a href="#contact">Contact Us</a>
+          <span>|</span>
+          <a href="#plans">About Plans</a>
+        </p>
+        <p class="phone-row">Questions? Call us <a href="tel:+13527771771">(352) 777-1771</a></p>
+        <a class="cta-button" href="#get-quote">Schedule Appointment</a>
+      </div>
+    </div>
 
-  <header>
-    <h1>Total Insurance USA</h1>
-    <h2>Life Insurance Solutions for Families</h2>
-    <p>Protecting what matters most — affordable plans, clear guidance.</p>
+    <nav class="main-nav">
+      <div class="wrap nav-inner">
+        <a href="#plans">Plans</a>
+        <a href="#pricing">Pricing Notes</a>
+        <a href="#get-quote">Get Quote</a>
+        <a href="#contact">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#plans">Plans</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content wrap">
+        <h1>REQUEST QUOTE</h1>
+      </div>
+    </section>
 
-  <div class="container" id="plans">
-    <h2 class="section-header">Example Plans</h2>
-    <ul>
-      <li><b>Term Life Basic</b> — $15/month
+    <section class="intro wrap">
+      <p>
+        Looking for a specific type of life insurance? Review sample options below,
+        then complete the quote form to get personalized pricing fast.
+      </p>
+    </section>
+
+    <section class="plans wrap" id="plans">
+      <article class="plan-card">
+        <h2>Term Life Basic</h2>
+        <p class="plan-price">Starting at $15/month</p>
         <ul>
           <li>10-year level term</li>
           <li>Coverage up to $100,000</li>
-          <li>No medical exam required for qualified applicants</li>
+          <li>No medical exam for qualified applicants</li>
         </ul>
-      </li>
-      <li><b>Term Life Plus</b> — $28/month
+      </article>
+
+      <article class="plan-card">
+        <h2>Term Life Plus</h2>
+        <p class="plan-price">Starting at $28/month</p>
         <ul>
           <li>20-year level term</li>
           <li>Coverage up to $250,000</li>
           <li>Lower rates for non-smokers</li>
         </ul>
-      </li>
-      <li><b>Whole Life Secure</b> — $95/month
+      </article>
+
+      <article class="plan-card">
+        <h2>Whole Life Secure</h2>
+        <p class="plan-price">Starting at $95/month</p>
         <ul>
           <li>Lifetime coverage</li>
           <li>Cash value accumulation</li>
           <li>Flexible premium options</li>
         </ul>
-      </li>
-    </ul>
-  </div>
+      </article>
+    </section>
 
-  <div class="container" id="pricing">
-    <h2 class="section-header">Pricing & Notes</h2>
-    <p class="price">Example monthly pricing shown next to each plan above.</p>
-    <p>Actual rates depend on age, health, and coverage amount. Get a free quote — no obligation.</p>
-    <p>We help you compare options and choose the best policy for your family's needs.</p>
-  </div>
+    <section class="pricing wrap" id="pricing">
+      <h2>Pricing and Notes</h2>
+      <p>Rates vary by age, health history, and desired coverage amount.</p>
+      <p>Our team helps you compare options and choose the policy that fits your goals and budget.</p>
+    </section>
 
-<!-- Quote request form -->
-<div class="container" id="get-quote">
-  <h2 class="section-header">Get a Free Quote</h2>
-  <p>Complete the form below and we'll email or call you with a tailored quote.</p>
+    <section class="quote wrap" id="get-quote">
+      <h2>Get a Free Quote</h2>
+      <p>Complete the form below and we will email or call you with a tailored quote.</p>
 
-  <form id="quote-form">
-    <label for="q-name">Full name</label>
-    <input type="text" id="q-name" name="name" required>
+      <form id="quote-form" class="form-grid">
+        <label for="q-name">Full name</label>
+        <input type="text" id="q-name" name="name" required>
 
-    <label for="q-email">Email</label>
-    <input type="email" id="q-email" name="email" required>
+        <label for="q-email">Email</label>
+        <input type="email" id="q-email" name="email" required>
 
-    <label for="q-phone">Phone (optional)</label>
-    <input type="tel" id="q-phone" name="phone">
+        <label for="q-phone">Phone (optional)</label>
+        <input type="tel" id="q-phone" name="phone">
 
-    <label for="q-age">Age</label>
-    <input type="number" id="q-age" name="age" min="18" max="120">
+        <label for="q-age">Age</label>
+        <input type="number" id="q-age" name="age" min="18" max="120">
 
-    <label for="q-coverage">Desired coverage amount (USD)</label>
-    <input type="number" id="q-coverage" name="coverage" placeholder="e.g. 250000">
+        <label for="q-coverage">Desired coverage amount (USD)</label>
+        <input type="number" id="q-coverage" name="coverage" placeholder="e.g. 250000">
 
-    <label for="q-smoker">Smoker?</label>
-    <select id="q-smoker" name="smoker">
-      <option value="unknown">Prefer not to say</option>
-      <option value="no">No</option>
-      <option value="yes">Yes</option>
-    </select>
+        <label for="q-smoker">Smoker?</label>
+        <select id="q-smoker" name="smoker">
+          <option value="unknown">Prefer not to say</option>
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select>
 
-    <label for="q-message">Additional details (health conditions, beneficiaries, etc.)</label>
-    <textarea id="q-message" name="message" rows="4" placeholder="Optional details"></textarea>
+        <label for="q-message">Additional details</label>
+        <textarea id="q-message" name="message" rows="4" placeholder="Optional details"></textarea>
 
-    <button type="submit">Request Quote</button>
-  </form>
+        <button type="submit">Request Quote</button>
+      </form>
 
-  <p id="quote-status" style="margin-top:12px;color:#083b3a;"></p>
+      <p id="quote-status" class="status-text" aria-live="polite"></p>
+    </section>
+  </main>
 
-  <script>
-  document.getElementById('quote-form').addEventListener('submit', async function(e){
-    e.preventDefault();
-    const form = e.target;
-    const payload = {
-      name: form.name.value,
-      email: form.email.value,
-      phone: form.phone.value,
-      age: form.age.value,
-      coverage: form.coverage.value,
-      smoker: form.smoker.value,
-      message: form.message.value,
-      submittedAt: new Date().toISOString()
-    };
+  <footer class="site-footer" id="contact">
+    <div class="wrap footer-grid">
+      <section>
+        <h3>Contact Us</h3>
+        <p>12112 Kelly Ann Lp<br>Brooksville, FL 34613</p>
+        <p>Phone: <a href="tel:+13527771771">(352) 777-1771</a></p>
+      </section>
 
-    try {
-      const res = await fetch('/api/quote', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(payload)
-      });
-      if (res.ok) {
-        form.reset();
-        document.getElementById('quote-status').textContent = 'Quote request submitted — we will contact you shortly.';
-      } else {
-        document.getElementById('quote-status').textContent = 'Submission failed. Please try again later.';
-      }
-    } catch (err) {
-      document.getElementById('quote-status').textContent = 'Submission failed. Please check your connection.';
-    }
-  });
-  </script>
+      <section>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#pricing">Pricing Notes</a></li>
+          <li><a href="#get-quote">Request Quote</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </section>
 
-</div>
+      <section>
+        <h3>Email Us</h3>
+        <form action="https://formsubmit.co/diana.lifeins@gmail.com" method="POST" class="contact-form">
+          <input type="hidden" name="_cc" value="HipolitoThe3rd@outlook.com">
+          <input type="text" id="contact-name" name="contact-name" placeholder="First Name" required>
+          <input type="text" id="contact-last-name" name="contact-last-name" placeholder="Last Name" required>
+          <input type="email" id="contact-email" name="contact-email" placeholder="Email" required>
+          <input type="tel" id="contact-phone" name="contact-phone" placeholder="Phone (optional)">
+          <textarea id="contact-message" name="contact-message" rows="4" placeholder="Type your message here..." required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
 
-<!-- Contact form remains below -->
-<div class="section-box" id="contact">
-  <h2>Contact Me</h2>
-  <p>If you'd like to reach out, please fill out the form below with your details and reason for contacting me.</p>
-
-  <form action="https://formsubmit.co/diana.lifeins@gmail.com" method="POST">
-  <input type="hidden" name="_cc" value="HipolitoThe3rd@outlook.com">
-    <label for="contact-name">Name:</label>
-    <input type="text" id="contact-name" name="contact-name" required>
-    <br />
-    <label for="contact-email">Email:</label>
-    <input type="email" id="contact-email" name="contact-email" required>
-    <br />
-    <label for="contact-phone">Phone (optional):</label>
-    <input type="tel" id="contact-phone" name="contact-phone">
-    <br />
-    <label for="contact-message">Reason for Contacting Me:</label>
-    <br />
-    <textarea id="contact-message" name="contact-message" rows="6" placeholder="Please describe how I can help you..." required></textarea>
-    <br />
-    <button type="submit">Submit</button>
-  </form>
-</div>
-
-  <footer>
-    <a href ="privacy.html">Privacy Policy</a>
-    <p>&copy; 2026 Total Insurance USA</p>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Total Insurance USA. All rights reserved.</p>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
   </footer>
 
+  <script>
+    document.getElementById("quote-form").addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const form = e.target;
+      const payload = {
+        name: form.name.value,
+        email: form.email.value,
+        phone: form.phone.value,
+        age: form.age.value,
+        coverage: form.coverage.value,
+        smoker: form.smoker.value,
+        message: form.message.value,
+        submittedAt: new Date().toISOString()
+      };
+
+      const statusEl = document.getElementById("quote-status");
+
+      try {
+        const res = await fetch("/api/quote", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+
+        if (res.ok) {
+          form.reset();
+          statusEl.textContent = "Quote request submitted. We will contact you shortly.";
+        } else {
+          statusEl.textContent = "Submission failed. Please try again later.";
+        }
+      } catch (err) {
+        statusEl.textContent = "Submission failed. Please check your connection.";
+      }
+    });
+  </script>
 </body>
 </html>
