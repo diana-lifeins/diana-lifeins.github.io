@@ -110,10 +110,82 @@
     <p>We help you compare options and choose the best policy for your family's needs.</p>
   </div>
 
+<!-- Quote request form -->
+<div class="container" id="get-quote">
+  <h2 class="section-header">Get a Free Quote</h2>
+  <p>Complete the form below and we'll email or call you with a tailored quote.</p>
+
+  <form id="quote-form">
+    <label for="q-name">Full name</label>
+    <input type="text" id="q-name" name="name" required>
+
+    <label for="q-email">Email</label>
+    <input type="email" id="q-email" name="email" required>
+
+    <label for="q-phone">Phone (optional)</label>
+    <input type="tel" id="q-phone" name="phone">
+
+    <label for="q-age">Age</label>
+    <input type="number" id="q-age" name="age" min="18" max="120">
+
+    <label for="q-coverage">Desired coverage amount (USD)</label>
+    <input type="number" id="q-coverage" name="coverage" placeholder="e.g. 250000">
+
+    <label for="q-smoker">Smoker?</label>
+    <select id="q-smoker" name="smoker">
+      <option value="unknown">Prefer not to say</option>
+      <option value="no">No</option>
+      <option value="yes">Yes</option>
+    </select>
+
+    <label for="q-message">Additional details (health conditions, beneficiaries, etc.)</label>
+    <textarea id="q-message" name="message" rows="4" placeholder="Optional details"></textarea>
+
+    <button type="submit">Request Quote</button>
+  </form>
+
+  <p id="quote-status" style="margin-top:12px;color:#083b3a;"></p>
+
+  <script>
+  document.getElementById('quote-form').addEventListener('submit', async function(e){
+    e.preventDefault();
+    const form = e.target;
+    const payload = {
+      name: form.name.value,
+      email: form.email.value,
+      phone: form.phone.value,
+      age: form.age.value,
+      coverage: form.coverage.value,
+      smoker: form.smoker.value,
+      message: form.message.value,
+      submittedAt: new Date().toISOString()
+    };
+
+    try {
+      const res = await fetch('/api/quote', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(payload)
+      });
+      if (res.ok) {
+        form.reset();
+        document.getElementById('quote-status').textContent = 'Quote request submitted — we will contact you shortly.';
+      } else {
+        document.getElementById('quote-status').textContent = 'Submission failed. Please try again later.';
+      }
+    } catch (err) {
+      document.getElementById('quote-status').textContent = 'Submission failed. Please check your connection.';
+    }
+  });
+  </script>
+
+</div>
+
+<!-- Contact form remains below -->
 <div class="section-box" id="contact">
   <h2>Contact Me</h2>
   <p>If you'd like to reach out, please fill out the form below with your details and reason for contacting me.</p>
-  
+
   <form action="https://formsubmit.co/diana.lifeins@gmail.com" method="POST">
   <input type="hidden" name="_cc" value="HipolitoThe3rd@outlook.com">
     <label for="contact-name">Name:</label>
